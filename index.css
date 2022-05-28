@@ -1,0 +1,68 @@
+@keyframes color {
+  0%{
+    color:red;
+  }
+  20%{
+    color: orange;
+  }
+  40%{
+    color: yellow;
+  }
+  60%{
+    color: rgb(39, 253, 39);
+  }
+
+  80%{
+    color: cyan;
+  }
+  100%{
+    color: violet;
+  }
+  
+}
+
+
+.body{
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(blue, yellow)
+}
+
+.title {
+  animation: color 10s infinite alternate;
+  font-size: 5vh;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+.subtitle {
+  margin: 15% 10px 10%;
+  font-size: 3vh;
+  color: darkblue;
+}
+.button {
+  width:17%;
+  height:7vw;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 3vw;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em rgb(238, 82, 82);
+  background-color:#ff7f50;
+}
+
+.button:active{
+    top: .1em;
+    left: .1em;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
